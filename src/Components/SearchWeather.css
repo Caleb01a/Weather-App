@@ -1,0 +1,98 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.content_container {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.slider {
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+
+.bg {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+@keyframes slide {
+    0% {
+        background-image: url("img/slider_1.jpg");
+    }
+    20% {
+        background-image: url("img/slider_1.jpg");
+    }
+    20.01% {
+        background-image: url("img/slider_2.jpg");
+    }
+    50% {
+        background-image: url("img/slider_2.jpg");
+    }
+    50.01% {
+        background-image: url("img/slider_3.jpeg");
+    }
+    70% {
+        background-image: url("img/slider_3.jpeg");
+    }
+    70.01% {
+        background-image: url("img/slider_4.jpeg");
+    }
+    100% {
+        background-image: url("img/slider_4.jpeg");
+    }
+}
+
+.card {
+    background-color: black;
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: 1em;
+}
+
+.search_icon {
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bar {
+    padding: 1.5%;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.weather {
+    margin-top: 2%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.date {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
